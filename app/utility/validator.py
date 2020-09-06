@@ -1,4 +1,14 @@
 def validate_name(name):
+
+    num = {"1","2","3","4","5","6","7","8","9","0"}
+    spe ={"!","@","#","$"}
+
+    for char in name:
+        is_num = char in num
+        is_spe = char in spe
+        if  is_num or is_spe or char =="": 
+
+            return False
     return True
 
 
